@@ -1,0 +1,50 @@
+html,
+.body {
+	padding: 0;
+	margin: 0;
+}
+
+.carousel__wrapper {
+	width: 100%;
+	height: 100vh;
+	background-color: gray;
+}
+
+.carousel__btn {
+	font-size: 50px;
+	color: whitesmoke;
+	top: 50%;
+	cursor: pointer;
+	position: relative;
+}
+
+.carousel__btn--pre {
+	position: absolute;
+	left: 30px;
+	z-index: 9;
+}
+
+.carousel__btn--next {
+	position: absolute;
+	right: 30px;
+	z-index: 9;
+}
+
+.carousel__image {
+	height: 100%;
+	width: 100%;
+	color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	font-size: 50px;
+}
+
+.carousel__container:first-child {
+}
+
+.carousel__image .active {
+	z-index: 1;
+	opacity: 1;
+}
